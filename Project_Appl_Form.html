@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Application Form</title>
+    <link rel="stylesheet" href="Project_Appl_Form.css">
+</head>
+<body>
+    <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+          <h1 id="title">Primary School Admission 2016 <br>Common Application Form</h1>
+          <p class="description"><b>Note:</b>The form must be completed at least 15 days before school</p>
+          
+          <!-- ------------------Personal Details---------------------------- -->
+          <fieldset>
+            <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+            <legend style="font-size: 1.5em">Section 1</legend> <br> <b>Pupil Details</b>        
+            <!-- formally describes the purpose of the fieldset it is included inside. -->
+          
+            <table>            
+              <div>
+                <br>
+                <label id="surname-label" for="pupil surname">Pupil Surname:</label>
+                <input type="text" required id="Pupil Surname" name="pupil surname" placeholder="Enter pupil surname here">   
+            
+                <label for="First Name(s)-label">First Name(s):</label>
+                <input type="text" id="First Name(s)" name="First Name(s)" placeholder="Enter first name here">  
+              </div>
+
+              <div>
+                <label id="Date of Birth-label" for="date of birthday">Date of Birth:</label>
+                <input type="text" required id="Date of Birth" name="Date of Birth" placeholder="Enter date here">   
+              
+                <input type="checkbox" name="gender" value="Male" checked> Male
+                <input type="checkbox" name="gender" value="Female"> Female
+                <input type="checkbox" name="gender" value="Other"> Other<br>
+              </div>            
+            
+              <div>
+                <label id="another name-label" for="another name">If this child has been known by another name please enter it here:</label>
+                <input type="text" required id="another name" name="another name" placeholder="Enter another name here">                
+              </div>
+              <br>
+            </table> 
+
+          </fieldset>
+
+ 
+        <!-- ------------------Home Address Details---------------------------- -->
+          <fieldset>
+           <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+           <legend style="font-size: 1.5em">Section 2</legend> <br> <b>Home Address</b>        
+           <!-- formally describes the purpose of the fieldset it is included inside. -->
+           <br><br>
+
+           <table>           
+              <div>
+                <label id="House Number-label" for="name">House Number:</label>
+                <input type="text" required id="House Number" name="House Number" placeholder="Enter house number here">  
+
+               <label for="House Name-label">House Name:</label>
+                <input type="text" id="House Name" name="House Name" placeholder="Enter house name here">  
+             </div>
+
+             <div>
+                <label id="Street-label" for="street">Street:</label>
+                <input type="text" required id="street" name="Street" placeholder="Enter street here">   
+    
+                <label for="Village-label">Village (if applicable):</label>
+                <input type="text" id="Village" name="Village" placeholder="Enter village here">  
+             </div>
+             
+             <div>
+                <label id="Post Town-label" for="Post Town">Post Town:</label>
+                <input type="Post Town" required id="Post Town" name="Post Town" placeholder="Enter post town here">  
+   
+                <label for="Post Code-label">Post Code:</label>
+                <input type="text" id="Post Code" name="Post Code" placeholder="Enter post code here">  
+             </div> 
+             <br>         
+           </table> 
+          </fieldset>
+
+         <!-- ------------------Parent/Carer’s Details---------------------------- -->
+          <fieldset>
+          <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+          <legend style="font-size: 1.5em">Section 3</legend> <br><b>Parent/Carer's Details</b>        
+          <!-- formally describes the purpose of the fieldset it is included inside. -->
+          <br><br>
+
+           <table>
+        
+             <div>
+               <label id="Title-label" for="Title">Title:</label>
+               <input type="text" required id="Title" name="Titul" placeholder="Enter title here">  
+               
+               <label for="Initial-label">Initial:</label>
+               <input type="text" id="Initial" name="Initial" placeholder="Enter initial here">  
+             
+               <label id="Surname" for="Surname">Surname:</label>
+               <input type="text" required id="Surname" name="Surname" placeholder="Enter surname here">  <br> 
+             </div> 
+
+             <div>
+               <label for="Home Telephone No-label">Home Telephone No.:</label>
+               <input type="text" id="Home Telephone No" name="Home Telephone No" placeholder="Enter home phone No. here">  
+
+               <label id="Work Telephone No-label" for="Work Telephone No">Work Telephone No:</label>
+               <input type="Work Telephone No" required id="Work Telephone No" name="Work Telephone No" placeholder="Enter work phone No. here">  
+             </div> 
+
+             <div>
+               <label for="Mobile Telephone No.-label">Mobile Telephone No.:</label>
+               <input type="text" id="Mobile Telephone No." name="Mobile Telephone No." placeholder="Enter mobile phone No. here"> 
+               
+               <label for="Relationship to child-label">Relationship to child:</label>
+               <input type="text" id="Relationship to child" name="Relationship to child" placeholder="Enter relationship here"> <br> 
+             </div>
+               
+             <div>
+               <label for="Email address-label">Email address:</label> 
+               <input type="text" id="Email address" name="Email address" placeholder="Enter Email address here">               
+            </div>
+            <br>
+           </table> 
+        </fieldset>
+
+           
+         <!-- ------------------Other Details---------------------------- -->
+          <fieldset>
+          <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+          <legend style="font-size: 1.5em">Section 4</legend> <br><b>Other Details</b>        
+          <!-- formally describes the purpose of the fieldset it is included inside. -->
+         
+        <table>
+          <div>
+            <p> a) Does your child have a statement of Special Educational  <br>Needs
+              (or Education, Health and Care Plan)? 
+             <input type="checkbox" name="yes" value="yes"> Yes
+             <input type="checkbox" name="no" value="no"> No
+          </div>
+
+          <div>
+            <p>b) Are there any exceptional medical reasons why your child <br>should 
+               specifically attend your preferred schools?
+              <input type="checkbox" name="yes" value="yes"> Yes
+              <input type="checkbox" name="no" value="no"> No</p> 
+          </div>
+
+          <div>
+            <p>c) Is your child cared for by a Local Authority or is he/she <br>a previously 
+              looked after child?
+              <input type="checkbox" name="yes" value="yes"> Yes
+              <input type="checkbox" name="no" value="no"> No</p> </div>
+          </div>
+          <br>
+          <div>
+            <label for="Local Authority-label">If yes, which Local Authority?</label> 
+            <input type="text" id="Local Authority" name="Local Authority" placeholder="Enter Local Authority here">               
+         </div>
+         <br>
+        </table>
+     </fieldset>
+    
+
+
+           <!-- ------------------Preffered School---------------------------- -->
+      <fieldset>
+            <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+            <legend style="font-size: 1.5em">Section 5</legend> <br> <b>Preffered School</b>        
+            <!-- formally describes the purpose of the fieldset it is included inside. -->
+           
+            <p>Please list below all your preferred schools in priority order, <em>including any schools outside Essex.</em> <br>
+              We strongly recommend you use all your preferences.
+              The ranking of your preferences is <br>confidential to the Local Authority and will only be shared with schools 
+              in the event of appeals.<br>
+              You are not required to give reasons for your preferences, but where you do they will be shared <br>with
+              that school. Any reasons you give should relate to the published admissions policy for the school.</p>
+                    
+
+       <div>
+              <label for="Preffered School">Preffered School:</label>
+          <select id="dropdown">
+              <option value="Kennedy School">Kennedy School</option>
+              <option value="Washington School">Washington School</option>
+              <option value="Martin Luter King School">Martin Luter King School</option>
+              <option value="Denzel Washington School">Denzel Washington School</option>
+          </select>
+        
+              <label for="Reason">Reason:</label>
+          <select id="dropdown2">
+              <option value="Location">Location</option>
+              <option value="Safety">Safety</option>
+              <option value="Health">Health</option>  
+              <option value="Level">Level</option>
+          </select>        
+         <br><br>
+           <b> <p>Remember to check whether you also need to complete a SIF (Supplementary Information <br> Form) 
+          for any of your preferred schools. </p> </b>
+        </div>
+        <br>
+      </fieldset>
+
+          <!-- --------------------Section 6------------------------------ -->
+          
+          <fieldset>
+            <legend style="font-size: 1.5em">Section 6</legend>
+          <div>
+              <label for="msg"></label>
+              <p> Considered how your child will get to school and read all the <strong>Education Transport Policy information?</strong></p>
+              <textarea id="msg" name="user_message" rows="14" cols="60" placeholder="Enter Text Here"></textarea>   <br> <br>
+           
+              <label for="msg">Completed your application form and returned it to School Admissions to be received in their office <br>by 15 January 2016?</label><br> <br>
+              <textarea id="msg2" name="user_message" rows="14" cols="60" placeholder="Enter Text Here"></textarea>   
+          </div>
+            
+              <p>Upload Medical Certifiates here:
+              <button>Attach Files</button></p>
+
+          <div>
+            <label for="date-label">Date of Proposed Outing:</label>
+            <input type="date" name="bday">
+          </div>
+          <br>
+          </fieldset>
+        
+          <div id="submitbutton">
+            <button type="submit" id="submit">Send your application</button>  
+           </div>
+           <br>
+
+
+   <!-- --------------------Last Line------------------------------ -->
